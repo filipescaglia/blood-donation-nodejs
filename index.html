@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Doe sangue! Doe vida!</title>
         <meta charset="UTF-8" />
+        <title>Doe sangue! Doe vida!</title>
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <h1>DOE</h1>
+            <img class="logo" src="logo.png" alt="Imagem de DOE">
             <h2>A sua doação importa</h2>
             <p>Até 3 vidas com 1 doação</p>
             <p>Mais de 38.000 doações são necessárias todos os dias</p>
@@ -15,10 +17,21 @@
             <button>Quero ajudar</button>
         </header>
 
-        <section></section>
+        <section class="form hide">
+            <h2>Entre na lista de doadores</h2>
+            <form action="/" method="POST">
+                <input type="text" name="name" placeholder="Nome completo" />
+
+                <input type="text" name="email" placeholder="E-mail" />
+
+                <input type="text" name="blood" placeholder="Tipo sanguíneo" />
+
+                <button>Quero ajudar</button>
+            </form>
+        </section>
 
         <main>
-            <h2>Últimos doadores</h2>
+            <h2>Últimos <span>doadores</span></h2>
 
             <section class="donors">
                 <div class="donor">
@@ -46,10 +59,7 @@
         <footer>
             Com ❤ Rocketseat
         </footer>
+
+        <script src="script.js"></script>
     </body>
 </html>
-
-<!--
-    https://rocketseat.com.br/maratonadev/aulas/3.0?aula=1&fbclid=IwAR3q_jikcT1CrgtQ-4-9KH3YYVmMMFHJj4Mf4I6k-yXzS1ADEBMnku_AwAk
-    40:48 de vídeo
--->
